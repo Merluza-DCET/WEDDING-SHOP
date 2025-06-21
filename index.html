@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Wedding Shop</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <h1>ELEGANT WEDDING SHOP</h1>
+    <nav>
+      <a href="#shop">SHOP</a>
+      <a href="#appointment">BOOK APPOINTMENT</a>
+    </nav>
+  </header>
+
+  <main>
+    <section id="shop">
+      <h2>Shop Dresses</h2>
+      <div class="products">
+        <div class="product">
+          <img src="51p-xqATQML._AC_SX522_.jpg" alt="Wedding Dress 1">
+          <h3>ELEGANT GOWN</h3>
+          <p>35,000</p>
+          <button onclick="addToCart('Elegant Gown', 35000)">Add to Cart</button>
+        </div>
+        <div class="product">
+          <img src="wedding-dress-on-a-mannequin-ai-generative-free-photo.jpeg" alt="Wedding Dress 2">
+          <h3>SIMPLE STYLE GOWN</h3>
+          <p>20,000</p>
+          <button onclick="addToCart('Vintage Lace Dress', 20000)">Add to Cart</button>
+        </div>
+      </div>
+      <div id="cart">
+        <h3>Cart</h3>
+        <ul id="cart-items"></ul>
+        <p id="total">Total: $0</p>
+      </div>
+    </section>
+    <section id="appointment">
+      <h2>BOOK AN APPOINTMENT</h2>
+      <form id="appointment-form">
+        <label for="name">Name:</label>
+        <input type="text" id="name" required>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" required>
+
+        <label for="date">Preferred Date:</label>
+        <input type="date" id="date" required>
+
+        <button type="submit">Book Now</button>
+      </form>
+      <p id="confirmation" class="hidden"></p>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 ELEGANT WEDDING SHOP</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
